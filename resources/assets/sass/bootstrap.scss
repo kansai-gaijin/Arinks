@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+// Settings
+// ==============================================================
+// Before importing Bootstrap framework itself we will
+// overwrite its settings with out own variables.
+//@import 'settings';
+
+// Bootstrap
+// ==============================================================
+// Import Bootstrap framework and its dependences.
+
+@import "node_modules/bootstrap/scss/bootstrap";
