@@ -22,7 +22,13 @@ use function Arinks\Theme\App\config;
 function register_navigation_areas()
 {
     register_nav_menus([
-        'primary' => __('Primary', config('textdomain')),
+      'primary' => __('Primary', config('textdomain')),
+    ]);
+    register_nav_menus([
+      'members' => __('Members Only', config('textdomain')),
+    ]);
+    register_nav_menus([
+    'footer' => __('Footer', config('textdomain')),
     ]);
 }
 add_action('after_setup_theme', 'Arinks\Theme\App\Structure\register_navigation_areas');

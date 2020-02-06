@@ -5,10 +5,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php wp_head(); ?>
+        <script src="https://kit.fontawesome.com/5ac0764158.js" crossorigin="anonymous"></script>
     </head>
-    <body <?php body_class(); ?>>
-        <main id="app" class="app">
-            <nav>
-                <a href="<?= get_home_url(); ?>"><h1>WordPress Starter Theme</h1></a>
-            </nav>
-            <button type="button" class="btn btn-primary">Primary</button>
+    <body <?php body_class('loading'); ?>>
+      <?php do_action('theme/head/header'); ?>
+      <div class="site-container">
+        <div class="site-inner" role="main" itemprop="mainContentOfPage">

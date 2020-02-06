@@ -19,7 +19,7 @@ use function Arinks\Theme\App\config;
  *
  * @return void
  */
-function register_book_genre_taxonomy()
+/* function register_book_genre_taxonomy()
 {
     register_taxonomy('book_genre', 'book', [
         'rewrite' => [
@@ -44,4 +44,4 @@ function register_book_genre_taxonomy()
         ],
     ]);
 }
-add_action('init', 'Arinks\Theme\App\Structure\register_book_genre_taxonomy');
+add_action('init', 'Arinks\Theme\App\Structure\register_book_genre_taxonomy'); */

@@ -20,7 +20,7 @@ use function Arinks\Theme\App\config;
  *
  * @return void
  */
-function register_book_post_type()
+/* function register_book_post_type()
 {
     register_post_type('book', [
         'description' => __('Collection of books.', config('textdomain')),
@@ -44,4 +44,4 @@ function register_book_post_type()
         ],
     ]);
 }
-add_action('init', 'Arinks\Theme\App\Structure\register_book_post_type');
+add_action('init', 'Arinks\Theme\App\Structure\register_book_post_type'); */

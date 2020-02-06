@@ -14,6 +14,12 @@ namespace Arinks\Theme\Footer;
 
 use function Arinks\Theme\App\template;
 
+function render_footer()
+{
+  template('partials/footer');
+}
+add_action('theme/foot/footer', 'Arinks\Theme\Footer\render_footer');
+
 /**
  * Renders layout's footer.
  *
