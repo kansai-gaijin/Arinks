@@ -2,7 +2,7 @@
   <div class="wrap">
     <h1 class="header--logo">
       <small><?= $desc; ?></small>
-      <img src="<?= $logo ?>" alt="<?= $title; ?>" />
+      <a href="<?= $site_url ?>"><img src="<?= $logo ?>" alt="<?= $title; ?>" /></a>
     </h1>
     <nav class="header--main-nav">
       <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>

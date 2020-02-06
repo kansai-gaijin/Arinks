@@ -24,7 +24,7 @@ function render_header()
     'desc' => get_bloginfo( 'description' ),
     'login_url' => '#login',
     'mypage_url' => '#mypage',
-    'logged_in' => true,
+    'logged_in' => false,//is_user_logged_in(),
     'howto_url' => '#howtourl',
     'new_user_url' => '#newuser',
     'qna_url' => '#qnaurl'
