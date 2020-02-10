@@ -61,6 +61,8 @@ function add_theme_supports()
         'gallery',
         'caption',
     ]);
+
+    add_theme_support( 'timeline' );
 }
 add_action('after_setup_theme', 'Arinks\Theme\App\Setup\add_theme_supports');
 
