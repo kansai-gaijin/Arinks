@@ -32,3 +32,12 @@ function register_navigation_areas()
     ]);
 }
 add_action('after_setup_theme', 'Arinks\Theme\App\Structure\register_navigation_areas');
+
+function add_description_to_menu($item_output, $item, $depth, $args) {
+  if (strlen($item->description) > 0 ) {
+    $item_output = substr($item_output, 0, -strlen("</a>{$args->after}")) . sprintf('<small class="description">%s</small >', esc_html($item->description)) . "</a>{$args->after}";
+  }
+
+  return $item_output;
+}
+add_filter('walker_nav_menu_start_el', 'Arinks\Theme\App\Structure\add_description_to_menu', 10, 4);
