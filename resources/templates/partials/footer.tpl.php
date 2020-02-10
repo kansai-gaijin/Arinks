@@ -1,3 +1,3 @@
 <footer id="site-footer">
-THIS IS THE FOOTER yes, yes it is
+THIS IS THE FOOTER yes, yes it is again
 </footer>
