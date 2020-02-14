@@ -1,7 +1,7 @@
 <section id="page-header" class="anim">
-  <div class="wrapper">
     <h1 class="page-title">
-      <strong><?= $title ?></strong>
+      <div class="wrapper">
+        <strong><?= $title ?></strong>
+      </div>
     </h1>
-  </div>
 </section>
