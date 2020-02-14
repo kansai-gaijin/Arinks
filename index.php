@@ -16,18 +16,16 @@ namespace Arinks\Theme\Index;
 use function Arinks\Theme\App\template;
 
 /**
- * Renders index page header.
- *
- * @see resources/templates/index.tpl.php
+ * Renders page header
+ * 
+ * @see resources/templates/partials/page/page-header.tpl.php
  */
-function render_header()
-{
-    template('partials/header', [
-        'title' => __('Tonik — WordPress Starter Theme'),
-        'lead' => __('Tonik is a WordPress Starter Theme which aims to modernize, organize and enhance some aspects of WordPress theme development. Take a look at what is waiting for you.'),
-    ]);
+function render_page_header(){
+  template('partials/page/page-header',[
+    'title' => 'ニュース＆トピックス',
+  ]);
 }
-add_action('theme/index/header', 'Arinks\Theme\Index\render_header');
+add_action('theme/index/content_before', 'Arinks\Theme\Index\render_page_header');
 
 /**
  * Renders index page.

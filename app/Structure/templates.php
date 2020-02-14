@@ -48,6 +48,18 @@ function render_post_content()
 }
 add_action('theme/single/content', 'Arinks\Theme\App\Structure\render_post_content');
 
+
+/**
+ * Renders post contents by its formats.
+ *
+ * @see resources/templates/page.tpl.php
+ */
+function render_page_content()
+{
+    template(['partials/page/content']);
+}
+add_action('theme/page/content', 'Arinks\Theme\App\Structure\render_page_content');
+
 /**
  * Renders sidebar content.
  *

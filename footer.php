@@ -13,7 +13,7 @@ namespace Arinks\Theme\Footer;
 */
 
 use function Arinks\Theme\App\template;
-
+use function Arinks\Theme\App\asset_path;
 function render_footer()
 {
   template('partials/footer');
@@ -26,3 +26,16 @@ add_action('theme/foot/footer', 'Arinks\Theme\Footer\render_footer');
  * @see resources/templates/layout/footer.tpl.php
  */
 template('layout/footer');
+
+?>
+
+<!--<div id="loader">
+  <div class="loader-inner">
+    <figure>
+      <img src="<?php echo asset_path('images/temporary-logo.svg') ?>" alt="" />
+    </figure>
+    <p>
+      LOADING...
+    </p>
+  </div>
+</div>-->
