@@ -30,7 +30,13 @@ section.policy h2::after{
 section.policy h3{
   color:$primary-color;
   font-size:18px;
-  line-height:28px;
+  line-height:32px;
   font-weight:bold;
   margin-bottom:20px;
+  text-align:justify;
+}
+section.policy p{
+  font-size:16px;
+  line-height:28px;
+  text-align: justify;
 }
