@@ -1,68 +1,66 @@
-@import 'home.scss';
+@import "home.scss";
 
-h4.light{
-  color:grey;
-  text-align:center;
-  font-weight:bold;
-  margin:50px 0;
+h4.light {
+  color: grey;
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 0;
 }
-.page-section.yellow{
-  background-color:#EFEFE5;
-  padding:60px 0;
+.page-section.yellow {
+  background-color: #efefe5;
+  padding: 60px 0;
 }
-.page-section.yellow p{
-  margin:40px 0;
+.page-section.yellow p {
+  margin: 40px 0;
 }
-.page-section.yellow h3::after{
-  border-top:20px solid #efefe5;
+.page-section.yellow h3::after {
+  border-top: 20px solid #efefe5;
 }
-.page-section .section-body.slim{
-  max-width:900px;
-  margin:auto;
+.page-section .section-body.slim {
+  max-width: 900px;
+  margin: auto;
 }
-table{
-  width:100%;
-  margin:40px 0;
+table {
+  width: 100%;
+  margin: 40px 0;
 }
-table td, table th{
-  padding:15px;
-  border-color:#00b86d
+table td,
+table th {
+  padding: 15px;
+  border-color: #00b86d;
 }
-table th{
-  background-color:#00b86d;
-  color:white;
-  text-align:center;
-  border-color:white;
+table th {
+  background-color: #00b86d;
+  color: white;
+  text-align: center;
+  border-color: white;
   white-space: nowrap;
 }
-table td{
-  font-size:14px;
+table td {
+  font-size: 14px;
 }
-@media(min-width:768px){
-  table td{
-    font-size:16px;
+@media (min-width: 768px) {
+  table td {
+    font-size: 16px;
   }
 }
 
-
-
-.kyoshi-image img{
-	width:100%;
+.kyoshi-image img {
+  width: 100%;
 }
 
-
-#teacher-shokai table{
-  margin:0;
+#teacher-shokai table {
+  margin: 0;
 }
 #teacher-shokai table td,
-#teacher-shokai table th{
-  padding:10px;
+#teacher-shokai table th {
+  padding: 10px;
 }
-#teacher-shokai table th{
-  background-color:white;
-  color:#00b86d;
-  border-bottom:4px solid #00b86d;
+#teacher-shokai table th {
+  background-color: white;
+  color: #00b86d;
+  border-bottom: 4px solid #00b86d;
 }
-#teacher-shokai table td{
-  border-bottom: 4px solid #CFCFCF;
+#teacher-shokai table td {
+  border-bottom: 4px solid #cfcfcf;
 }
