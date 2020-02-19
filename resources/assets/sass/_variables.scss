@@ -28,3 +28,13 @@ figure{
   background-color: darken($color: #00B86D, $amount: 0.4);
   border-color: darken($color: #00B86D, $amount: 0.4);
 }
+
+.pc-only{
+  display:none;
+}
+
+@media(min-width:768px){
+  .pc-only{
+    display:inherit;
+  }
+}
