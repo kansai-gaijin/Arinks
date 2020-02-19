@@ -266,7 +266,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p style="display:flex;">現在のポイント：　<strong><?php echo do_shortcode('[mycred_my_balance]'); ?></strong> 　予約ポイント：<strong>50</strong></p>
+        <div style="display:flex;">現在のポイント：　<strong><?php echo do_shortcode('[mycred_my_balance]'); ?></strong> 　予約ポイント：<strong>50</strong></div>
         <form>
           <div class="form-group">
             <label for="exampleInputEmail1">Skype ID: </label>
