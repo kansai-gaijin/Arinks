@@ -273,6 +273,18 @@
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skype ID">
             <small id="emailHelp" class="form-text text-muted">教師が連絡するために必須です。</small>
           </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">レッスン選択</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>フリートーク</option>
+              <option>テストレッスン</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">レッスンコード</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skype ID">
+            <small id="emailHelp" class="form-text text-muted">レッスンコードはレッスン一覧に書いております。</small>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
