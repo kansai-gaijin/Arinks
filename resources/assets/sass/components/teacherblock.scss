@@ -1,0 +1,33 @@
+article.susume-teacher-item figure{
+  position:relative;
+  padding-bottom:70%;
+  border-radius:10px;
+}
+article.susume-teacher-item figure figcaption{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  background-color:white;
+  padding:15px;
+  border-radius:5px;
+}
+article.susume-teacher-item{
+  margin-bottom:20px;
+}
+article.susume-teacher-item figure figcaption p{
+  margin-bottom:0;
+  color:#4B4B4B;
+}
+article.susume-teacher-item figure figcaption p.name strong{
+  margin-right:20px;
+}
+article.susume-teacher-item figure figcaption p.meta{
+  text-align:center;
+}
+article.susume-teacher-item a{
+  display:block;
+  transition:0.28s ease-in-out;
+}
+article.susume-teacher-item a:hover{
+  opacity:0.6;
+}

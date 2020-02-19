@@ -1,0 +1,13 @@
+.triangle-image img{
+  display:block;
+  width:100%;
+}
+.triangle-image{
+  margin-bottom:-8%;
+  display:block;
+}
+@media(min-width:993px){
+  .triangle-image{
+    margin-bottom:-15%;
+  }
+}

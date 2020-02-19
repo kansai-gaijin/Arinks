@@ -6,3 +6,14 @@ $primary-color: #00B86D;
 $seconday-color: #EFEFE5;
 $accent:#FF8800;
 $secondary-accent: #7BBBBB;
+
+
+figure{
+  margin:0;
+  padding:0;
+}
+@media(min-width:769px){
+  br.sp-only{
+    display:none;
+  }
+}

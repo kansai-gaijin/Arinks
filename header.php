@@ -22,12 +22,12 @@ function render_header()
     'logo' => asset_path('images/temporary-logo.svg'),
     'site_url' => get_site_url(),
     'desc' => get_bloginfo( 'description' ),
-    'login_url' => '#login',
-    'mypage_url' => '#mypage',
-    'logged_in' => false,//is_user_logged_in(),
-    'howto_url' => '#howtourl',
-    'new_user_url' => '#newuser',
-    'qna_url' => '#qnaurl'
+    'login_url' => get_site_url().'/login/',
+    'mypage_url' => get_site_url().'/account/',
+    'logged_in' => is_user_logged_in(),
+    'howto_url' => get_site_url().'/about/',
+    'new_user_url' => get_site_url().'/account/',
+    'qna_url' => get_site_url().'/qna/'
 
   ]);
   template('partials/drawer');

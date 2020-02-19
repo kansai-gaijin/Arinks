@@ -30,6 +30,12 @@ function register_navigation_areas()
     register_nav_menus([
     'footer' => __('Footer', config('textdomain')),
     ]);
+    register_nav_menus([
+      'drawer' => __('Drawer', config('textdomain')),
+    ]);
+    register_nav_menus([
+      'drawer-member' => __('Member Drawer', config('textdomain')),
+    ]);
 }
 add_action('after_setup_theme', 'Arinks\Theme\App\Structure\register_navigation_areas');
 

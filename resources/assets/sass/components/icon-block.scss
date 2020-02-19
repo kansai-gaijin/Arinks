@@ -1,0 +1,97 @@
+.icon-block figure{
+  position:relative;
+  height:111px;
+  width:107px;
+  margin:auto;
+  padding:10px;
+  margin-bottom:-56px;
+  z-index:1;
+}
+.icon-block figure img{
+  width:100%;
+}
+.icon-block figure::before{
+  content:"";
+  background:url(https://arinks-cebu.jp/wp-content/uploads/2020/02/ib-bg.png)no-repeat;
+  background-size:100% 100%;
+  background-position:center;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index:-1;
+}
+.icon-block-content{
+  padding:56px 5px 20px 5px;
+  border:10px solid $primary-color;
+  box-sizing:border-box;
+}
+.icon-block h3{
+  margin:20px 0;
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+  line-height:25px;
+}
+.icon-block p{
+  font-size:14px;
+  text-align:center;
+  margin:auto;
+  line-height:25px;
+}
+.icon-block{
+  margin-bottom:20px;
+}
+@media(min-width:600px){
+  .icon-block h3{
+    margin:20px 0;
+    font-size:4vw;
+    font-weight:bold;
+    text-align:center;
+    line-height:5.5vw;
+  }
+  .icon-block p{
+    font-size:2.5vw;
+    text-align:center;
+    margin:auto;
+    line-height:4.5vw;
+  }
+}
+@media(min-width:768px){
+  .icon-block figure{
+    margin-bottom:0;
+  }
+  .icon-block-content{
+    padding:0 10px 0 10px;
+    border:none;
+  }
+  .icon-block h3{
+    font-size:16px;
+    line-height:28px;
+  }
+  .icon-block p{
+    font-size:14px;
+    line-height:25px;
+  }
+  .icon-block figure{
+    height:152px;
+    width:147px;
+  }
+  .icon-block br{
+    display:none;
+  }
+}
+@media(min-width:992px){
+  .icon-block h3{
+    font-size:22px;
+    line-height:32px;
+  }
+  .icon-block p{
+    font-size:16px;
+    line-height:28px;
+  }
+  .icon-block br{
+    display:block;
+  }
+}

@@ -1,3 +1,14 @@
+/**** default titles *****/
+h2,h3,h4,h5,h6{
+  color:$primary-color;
+}
+.dark h2, .dark h3, .dark h4, .dark h5, .dark h6{
+  color:white;
+}
+
+
+/*** policy titles *******/
+
 h1.page-title,
 section.policy h2 {
   background-color: $primary-color;
@@ -52,5 +63,133 @@ section.policy p {
   section.policy h2 {
     font-size: 34px;
     line-height: 34px;
+    padding:30px 20px;
+  }
+}
+h3.section-title{
+  text-align:center;
+  padding-bottom:10px;
+  border-bottom:3px solid #00b86d;
+  position:relative;
+  margin-bottom:50px;
+  font-size:20px;
+}
+h3.section-title::before,
+h3.section-title::after{
+  content:"";
+  position:absolute;
+  border-top:20px solid #00b86d;
+  border-bottom:20px solid transparent;
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  display:block;
+  height:0;
+  width:0;
+  left:50%;
+  bottom:-40px;
+  margin-left:-10px;
+}
+h3.section-title::after{
+  border-top:20px solid white;
+  bottom:-36px;
+}
+@media(min-width:768px){
+  h3.section-title{
+    padding-bottom:20px;
+    font-size:28px;
+  }
+}
+
+/********* FAT TITLE ***********/
+h2.fat-title{
+  font-weight:900;
+  font-size:27px;
+  line-height:38px;
+  text-align:center;
+  margin:40px 0;
+  color:#5B5B5B;
+}
+h2.fat-title strong{
+  color:$primary-color;
+}
+@media(min-width:769px){
+  h2.fat-title{
+    font-size:30px;
+    line-height: 6.5vw;
+  }
+}
+@media(min-width:993px){
+  h2.fat-title{
+    font-size:45px;
+    line-height:38px;
+    margin:50px 0;
+  }
+}
+
+/************ LOGO TITLE ************/
+h2.logo-title img{
+  display:block;
+  margin:auto;
+  width:50%;
+  max-width:186px;
+}
+h2.logo-title figure{
+  margin-bottom:10px;
+}
+h2.logo-title{
+  text-align:center;
+  font-weight:bold;
+  margin-bottom:30px;
+  font-size:28px;
+  line-height:28px;
+}
+@media(min-width:769px){
+  h2.logo-title{
+    margin-bottom:60px;
+    font-size:45px;
+    line-height:45px;
+  }
+  h2.logo-title figure{
+    margin-bottom:20px;
+  }
+}
+
+/*********** SEC TITLE ************/
+h2.section-title{
+  text-align:center;
+  line-height:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:40px;
+}
+h2.section-title strong{
+  font-size:28px;
+  line-height:28px;
+  margin-bottom:5px;
+}
+h2.section-title small{
+  font-size:22px;
+  line-height:22px;
+  padding-bottom:10px;
+  border-bottom:3px solid;
+  padding-left:30px;
+  padding-right:30px;
+}
+@media(min-width:768px){
+  h2.section-title strong{
+    font-size:44px;
+    line-height:44px;
+    margin-bottom:10px;
+  }
+  h2.section-title small{
+    font-size:35px;
+    line-height:35px;
+    font-weight:500;
+    padding-bottom:20px;
+  }
+  h2.section-title{
+    margin-bottom:50px;
   }
 }

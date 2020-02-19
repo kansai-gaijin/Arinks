@@ -1,0 +1,24 @@
+.free-entry-title{
+  background-color:$primary-color;
+  padding:30px 0;
+}
+.free-entry-title h2{
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  font-size:25px;
+  line-height:32px;
+}
+.free-entry-form input{
+  width:100%;
+}
+.free-entry-form{
+  margin:40px auto 40px auto;
+  max-width:730px;
+}
+@media(min-width:768px){
+  .free-entry-title h2{
+    font-size:41px;
+    line-height:52px;
+  }
+}

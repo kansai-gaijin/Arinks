@@ -1,0 +1,240 @@
+.header--logo small,
+.header--member-nav-area,
+.header--main-nav,
+.header--qna,
+.header--new-acount-button{
+  display:none;
+}
+.header--logo img{
+  display:block;
+  height:33px;
+}
+#site-header{
+  position:fixed;
+  z-index: 1000;
+  background-color:white;
+  width:100%;
+  border-top:5px solid #00B86D;
+  padding:15px 0;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+  top:0;
+  left:0;
+}
+#site-header .wrapper{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--mobile-actions ul{
+  display:flex;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.header--mobile-actions ul li{
+  margin:0;
+  padding: 0 10px;
+  border-right:1px solid #A4A4A4;
+}
+.header--mobile-actions ul li:last-of-type{
+  border:none;
+  padding-right:0;
+}
+#site-header h1{
+  margin:0;
+}
+.header--mobile-actions button{
+  border:none;
+  background:none;
+  padding:0;
+  font-size:12px;
+  display:block;
+  height:43px;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  color:#A4A4A4;
+}
+.header--mobile-actions a{
+  font-size:12px;
+  text-decoration: none;
+}
+.header--mobile-actions .header--action-new a{
+  color:#A4A4A4;
+  line-height:12px;
+  display:block;
+}
+.header--mobile-actions .header--action-new a i{
+  font-size:25px;
+  display:block;
+  text-align:center;
+  line-height:25px;
+  margin-bottom:3px;
+  color:#7BBBBB;
+}
+.header--action-login a{
+  line-height:12px;
+  display:block;
+}
+.header--action-login a i{
+  font-size:25px;
+  display:block;
+  text-align:center;
+  line-height:25px;
+  margin-bottom:3px;
+}
+.ham-but .bar{
+  display:block;
+  position:absolute;
+  height:4px;
+  width:29px;
+  border-radius:40px;
+  background-color:#A4A4A4;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.ham-but .bar:first-of-type{
+  margin-top:-19px;
+}
+.ham-but .bar:nth-of-type(2){
+  margin-top:-10px;
+}
+.header--mobile-actions button.js-member-toggle{
+  color:#00B86D;
+}
+.header--mobile-actions button.js-member-toggle .bar{
+  background-color:#00B86D;
+}
+.site-container{
+  padding-top:78px;
+}
+@media(min-width:992px){
+  #site-header{
+    position:relative;
+    box-shadow: none;
+    z-index: 0;
+    top:auto;
+    left:auto;
+  }
+  .site-container{
+    padding-top:0px;
+  }
+}
+@media(min-width:992px){
+  .header--logo small,
+  .header--member-nav-area,
+  .header--main-nav,
+  .header--qna,
+  .header--new-acount-button{
+    display:block
+  }
+  #site-header h1 small{
+    font-size:14px;
+    font-weight:normal;
+    margin-bottom:15px;
+  }
+  #site-header h1 img{
+    height:67px;
+  }
+  .header--mobile-actions{
+    display:none;
+  }
+  #site-header .header--logo{
+    flex-grow:1;
+  }
+  #site-header .header--logo a{
+    display:inline-block;
+  }
+  .header--qna{
+    position:absolute;
+    right:20px;
+    top:-16px;
+  }
+  .header--qna a{
+    background-color:#00b86d;
+    display:block;
+    width:160px;
+    text-align:center;
+    padding:10px;
+    color:white;
+    text-decoration: none;
+    line-height:16px;
+    font-size:16px;
+    font-weight:normal;
+    border-radius: 0 0 5px 5px;
+    transition:0.28s ease-in-out;
+  }
+  
+  .header--qna a:hover{
+    opacity:0.7;
+  }
+  #site-header .wrapper{
+    position:relative;
+  }
+  #site-header .header--main-nav{
+    padding-top:30px;
+  }
+  #site-header .header--main-nav ul{
+    display:flex;
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  #site-header .header--main-nav ul li{
+    margin:0 10px;
+    border-right:2px solid #C2C2C2;
+    padding-right: 20px;
+  }
+  #site-header .header--main-nav ul li:last-of-type{
+    border:none;
+    padding-right:0;
+    margin-right:0;
+  }
+  #site-header .header--main-nav ul li a{
+    display:block;
+    text-decoration: none;
+    font-size:18px;
+    color:#6A6A6A;
+    text-align: center;
+    transition:0.28s ease-in-out;
+  }
+  #site-header .header--main-nav ul li a:hover{
+    color:#00b86d;
+  }
+  #site-header .header--main-nav ul li a small{
+    display:block;
+    font-size:16px;
+  }
+  .header--new-acount-button{
+    padding-left:20px;
+    padding-top:25px;
+    margin-bottom:-10px;
+  }
+}
+.header--member-nav-area{
+  background-color:rgba(0,0,0,0.05);
+  padding:20px;
+  margin:0;
+  margin-top:10px;
+}
+.header--member-nav ul{
+  margin:0;
+  padding:0;
+  display:flex;
+  list-style: none;
+  justify-content: center;
+}
+.header--member-nav ul li{
+  margin:0 20px;
+}
+
+.header--member-nav ul li a{
+  transition:0.28s ease-in-out;
+  text-decoration: none;
+}
+@media(min-width:992px){
+  body.logged-in #site-header{
+    padding-bottom:0;
+  }
+}

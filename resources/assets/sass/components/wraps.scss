@@ -1,5 +1,31 @@
+/*** main wrapper ***/
+
 .wrapper{
   padding:0 15px;
   max-width:1172px;
   margin:auto;
+}
+
+/*** page section ****/
+section.page-section{
+  margin:20px 0;
+}
+@media(min-width:769px){
+  section.page-section{
+    margin:60px 0;
+  }
+}
+
+section.dark{
+  background-color:$primary-color;
+}
+
+.page-section.dark{
+  padding:40px 0;
+  color:white;
+}
+@media(min-width:769px){
+  .page-section.dark{
+    padding:70px 0;
+  }
 }
