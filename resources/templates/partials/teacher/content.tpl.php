@@ -92,7 +92,7 @@
         <strong>レッスンスケジュール</strong>
       </h3>
     </div>
-    <div class="section-body slim">
+    <div class="section-body">
     <table>
         <thead>
           <tr>
