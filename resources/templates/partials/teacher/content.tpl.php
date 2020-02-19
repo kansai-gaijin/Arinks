@@ -93,7 +93,7 @@
       </h3>
     </div>
     <div class="section-body">
-    <table>
+    <table class="table table-condensed">
         <thead>
           <tr>
             <th>時間</th>
