@@ -23,3 +23,8 @@ figure{
   background-color: #00B86D;
   border-color: #00B86D;
 }
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+  color: #fff;
+  background-color: darken($color: #00B86D, $amount: 0.4);
+  border-color: darken($color: #00B86D, $amount: 0.4);
+}
