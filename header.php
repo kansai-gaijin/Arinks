@@ -23,7 +23,7 @@ function render_header()
     'site_url' => get_site_url(),
     'desc' => get_bloginfo( 'description' ),
     'login_url' => get_site_url().'/login/',
-    'mypage_url' => get_site_url().'/account/',
+    'mypage_url' => get_site_url().'/dashboard/',
     'logged_in' => is_user_logged_in(),
     'howto_url' => get_site_url().'/about/',
     'new_user_url' => get_site_url().'/account/',
