@@ -266,10 +266,16 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Skype ID: </label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skype ID">
+            <small id="emailHelp" class="form-text text-muted">教師が連絡するために必須です。</small>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">予約する</button>
+        <button type="button" class="btn btn-primary js-add-reserve">予約する</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">キャンセル</button>
       </div>
     </div>
@@ -279,7 +285,10 @@
 
 <script>
   jQuery('.js-reserve').click(function(){
-    jQuery('#reserve-modal').modal('toggle')
+    jQuery('#reserve-modal').modal('toggle');
+  });
+  jQuery('.js-add-reserve').click(function(){
+    window.location.replace("https://arinks-cebu.jp/reserve-history/");
   });
 </script>
 
