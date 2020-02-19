@@ -106,7 +106,7 @@
             <th class="pc-only">2020-02-25</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style="text-align:center;">
           <tr>
             <th>12:00</th>
             <td><button class="btn btn-primary js-reserve">予約</button></td>
