@@ -282,7 +282,7 @@
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">レッスンコード</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skype ID">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Lesson Code">
             <small id="emailHelp" class="form-text text-muted">レッスンコードはレッスン一覧に書いております。</small>
           </div>
         </form>
