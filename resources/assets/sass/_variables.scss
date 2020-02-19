@@ -29,12 +29,8 @@ figure{
   border-color: darken($color: #00B86D, $amount: 0.4);
 }
 
-.pc-only{
-  display:none;
-}
-
-@media(min-width:768px){
-  .pc-only{
-    display:inherit;
+@media(max-width:768px){
+  table .pc-only{
+    display:none!important;
   }
 }
