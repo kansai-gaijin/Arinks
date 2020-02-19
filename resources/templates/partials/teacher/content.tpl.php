@@ -256,7 +256,7 @@
 </section>
 
 <div class="reserve-form">
-<div class="modal" tabindex="-1" role="dialog">
+<div class="modal" id="reserve-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -277,6 +277,11 @@
 </div>
 </div>
 
+<script>
+  jQuery('.js-reserve').click(function(){
+    jQuery('#reserve-modal').modal('toggle')
+  });
+</script>
 
 <section id="teacher-footer">
 <p class="button-wrapper">
