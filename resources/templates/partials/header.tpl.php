@@ -1,18 +1,16 @@
 <header id="site-header">
-  <div class="wrap">
+  <div class="wrapper">
     <h1 class="header--logo">
       <small><?= $desc; ?></small>
       <a href="<?= $site_url ?>"><img src="<?= $logo ?>" alt="<?= $title; ?>" /></a>
     </h1>
     <nav class="header--main-nav">
-      <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
     </nav>
     <?php if(!$logged_in): ?>
-    <p>
+    <p class="header--new-acount-button">
       <a href="<?= $new_user_url; ?>">
-        <span>無料</span>
-        <span>アカウント</span>
-        <span>登録GO!</span>
+        <img src="<?php get_site_url(); ?>/wp-content/uploads/2020/03/new-accout-button-blue.svg" alt="" />
       </a>
     </p>
     <?php endif; ?>
@@ -51,6 +49,9 @@
     </div>
     <div class="header--qna">
       <a href="<?= $qna_url; ?>">よくある質問</a>
+    </div>
+    <div class="header--contact">
+      <a href="<?= $contact_url; ?>">お問合せ</a>
     </div>
   </div>
   <?php if($logged_in): ?>

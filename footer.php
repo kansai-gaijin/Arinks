@@ -14,11 +14,21 @@ namespace Arinks\Theme\Footer;
 
 use function Arinks\Theme\App\template;
 use function Arinks\Theme\App\asset_path;
+
 function render_footer()
 {
   template('partials/footer');
 }
 add_action('theme/foot/footer', 'Arinks\Theme\Footer\render_footer');
+
+function render_before_footer()
+{
+  template('partials/before-footer', [
+    'logged_in' => is_user_logged_in(),
+  ]);
+}
+add_action('theme/foot/beforefooter', 'Arinks\Theme\Footer\render_before_footer');
+
 
 /**
  * Renders layout's footer.

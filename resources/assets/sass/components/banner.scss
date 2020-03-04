@@ -1,0 +1,32 @@
+a.banner img{
+  display:block;
+  max-width:100%;
+  margin:auto;
+}
+a.banner{
+  display:block;
+  max-width: 550px;
+  margin:auto;
+  transition:all 0.28s ease-in-out;
+}
+a.banner:hover{
+  opacity:0.6;
+}
+section.banner-section{
+  margin:22px 0;
+}
+@media(min-width:769px){
+  section.banner-section{
+    margin:60px 0;
+  }
+}
+@media(min-width:993px){
+  a.banner{
+    max-width:750px;
+  }
+}
+@media(min-width:1200px){
+  a.banner{
+    max-width:100%;
+  }
+}

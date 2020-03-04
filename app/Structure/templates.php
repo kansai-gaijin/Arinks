@@ -85,3 +85,25 @@ function render_documentation_button()
     echo do_shortcode("[button href='https://github.com/tonik/tonik']Checkout documentation →[/button]");
 }
 add_action('theme/header/end', 'Arinks\Theme\App\Structure\render_documentation_button');
+
+/**
+ * Renders post thumbnail by its formats.
+ *
+ * @see resources/templates/index.tpl.php
+ */
+function render_teacher_block()
+{
+    template(['partials/teacher/article']);
+}
+add_action('theme/index/teacher/article', 'Arinks\Theme\App\Structure\render_teacher_block');
+
+/**
+ * Renders post contents by its formats.
+ *
+ * @see resources/templates/page.tpl.php
+ */
+function render_teacher_content()
+{
+    template(['partials/teacher/content']);
+}
+add_action('theme/teacher/content', 'Arinks\Theme\App\Structure\render_teacher_content');
